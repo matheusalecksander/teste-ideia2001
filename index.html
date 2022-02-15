@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ptBr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css" />
+  <title>QRIdeia</title>
+</head>
+
+<body>
+  <header class="header__container">
+    <div class="header__logo-container">
+      <img src="assets/logo.png" class="header__logo" />
+    </div>
+    <nav class="header__nav" id="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item header__nav-item--active">
+          <a href="" class="header__nav-link header__nav--active header__nav-link--active">Home</a>
+        </li>
+        <li class="header__nav-item"><a href="" class="header__nav-link">Eventos</a></li>
+        <li class="header__nav-item"><a href="" class="header__nav-link">Usuários</a></li>
+        <li class="header__nav-item"><a href="" class="header__nav-link">Relatórios</a></li>
+        <li class="disabled" id="logout-mobile">
+          <a href="" id="mobile-logout" class="header__nav-logout iterable">
+            Desconectar
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__user-container">
+      <img src="assets/user.png" class="header__user-image" />
+      <div class="header__user-info">
+        <p class="header__user-name">
+          Matheus Alecksander
+        </p>
+        <a href="" id="Logout" class="header__user-logout iterable">
+          Desconectar
+        </a>
+      </div>
+    </div>
+    <div class="header__mobile-menu" id="open"></div>
+    <div class="header__mobile-menu-close" id="close">
+      <p>X</p>
+    </div>
+  </header>
+  <main class="main__container">
+    <div class="main__orange-box"></div>
+    <section class="main__content-container">
+      <div class="main__content-box">
+        <p class="main__content--user-info">
+          Olá, <strong>Matheus Alecksander</strong>, selecione uma das opções abaixo.
+        </p>
+        <div class="main__content-card-container">
+          <div class="main__content-card iterable" id="Eventos">
+            <img src="assets/icone-eventos.png" class="main__content-card-image" />
+            <strong class="main__content-card-text">
+              Meus eventos
+            </strong>
+          </div>
+          <div class="main__content-card iterable" id="Usuários">
+            <img src="assets/icone-usuarios.png" />
+            <strong>
+              Usuários
+            </strong>
+          </div>
+          <div class="main__content-card iterable" id="Relatórios">
+            <img src="assets/icone-relatorios.png" />
+            <strong>
+              Relatórios
+            </strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer__container">
+    <p class="footer__p-text">
+      Ideia 2001
+    </p>
+    <span class="footer__span">
+      © Copyright 2019 - Todos os direitos reservados
+    </span>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
